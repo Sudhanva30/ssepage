@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>SSE Landing Page</title>
+        <style type="text/css">
+            .main{
+                width: 100%;
+                height: 100%;
+                justify-content: space-around;
+                display: contents;
+                align-items: center;
+
+            }
+            header{
+                background-image:linear-gradient(rgba(200, 100, 100, 0.3),rgba(100, 100, 200, 0.3)), url("sea.jpg");
+
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .direc{
+                font-size: 30px;
+                color: aliceblue;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+
+            }
+            .htxt{
+                font-size: 60px;
+                background:linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+            }
+            .cast {
+                font-size: 30px;
+                color: aliceblue;
+                top: 50%;
+                left:50%;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color: rgb(200, 234, 240);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .teaser {
+                font-size: large;
+                display: flex ;
+                align-items: center;
+                justify-content: space-around;
+            }
+            footer{
+                text-align: center;
+            }
+            .learn{
+                font-size: large;
+                display: flex ;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .buttonon {
+                background: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                border: 2px solid #9cd5d5;
+                border-radius: 30px;
+                box-shadow: #1996c8 4px 4px 0 0;
+                color: #1996c8;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 600;
+                font-size: 18px;
+                padding: 0 18px;
+                line-height: 50px;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .buttonon:hover {
+                background-color: rgb(5, 192, 202,10);
+                opacity: 0.8;
+            }
+
+            .buttonon:active {
+                box-shadow: #79c3cb 2px 2px 0 0;
+                transform: translate(2px, 2px);
+            }
+
+            @media (min-width: 768px) {
+            .buttonon {
+            min-width: 120px;
+            padding: 0 25px;
+            }
+            .pagetwo{
+                background-image: linear-gradient(rgba(200, 100, 100, 0.3),rgba(100, 100, 200, 0.3)), url(sse2.jpg);
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                
+                
+            }
+            .come{
+                width:100%; 
+                text-align: left;
+                margin-left: 20px; 
+                top: 50%; 
+                font-size: 60px;
+                color: rgb(255, 255, 255);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background:linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .about{
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                margin-left: 20px;
+                
+            }
+            .abouth a{
+                font-size: large;
+                letter-spacing: 3px;
+                color: rgb(200, 234, 240);
+                background-color: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+                text-decoration: none;
+                padding: 10px 20px;
+                position: relative;
+            }
+            .abouth a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid rgb(200,234,240);
+                transition: 0.4s linear;
+            }
+            .abouth a:hover:before{
+                width: 100%;
+            }
+            .logo a{
+                font-size: large;
+                letter-spacing: 3px;
+                color: rgb(200,234,240);
+                text-decoration: none;
+                padding: 10px 20px;
+                position: relative;
+                background-color: linear-gradient(0deg,rgba(248, 248, 248, 0.8), rgba(188, 199, 207, 0.8));
+            }
+            .logo a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 0%;
+                color: rgb(200,234,240);
+                border: 2px solid rgb(220, 235, 14);
+                transition: 0.1s linear;
+            }
+            .logo a:hover:before{
+                width: 100%;
+                height: 100%;
+                color: rgb(220, 235, 14);
+            }
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="https://paramvah.com/">
+                    A Paramvah Pictures Production
+                </a>
+                </div>
+                <div class="abouth">
+                    <a href="#pageone">
+                        Home
+                    </a>
+                </div>
+                <div class="abouth">
+                    <a href="#pagetwo">
+                        About
+                    </a>
+                </div>
+                <div class="trailer">
+                    <a href="https://youtu.be/dDMXyQ6cwIc">
+                        <button class="buttonon" role="button">Watch Trailer</button>
+                    </a>
+                </div>
+            </nav>
+            <section id="pageone">
+                <div class="direc">
+                <p>A film by Hemanth Rao</p>
+                </div>
+                <div class="htxt">
+                    <h1>SAPTA SAGARADACHE ELLO</h1>
+
+                </div>
+                <div class="cast">
+                    <p>RAKSHIT SHETTY</p>
+                    <p>RUKMINI VASANTH</p>
+
+                </div> 
+                <div class="teaser">
+                    <a href="https://youtu.be/j2ih0Ui-Amw">
+                        <button class="buttonon" role="button">
+                            SIDE A (Releasing on Sep 1st)
+                        </button>
+                    </a>
+                    <a href="https://youtu.be/3Ec1Q_7O3tQ">
+                        <button class="buttonon" role="button">
+                            SIDE B (Releasing on Oct 20th)
+                        </button>
+                    </a>
+                </div>
+                <div class="learn">
+                    <a href="#pagetwo">
+                        <button class="buttonon" role="button">
+                            BOOK TICKETS NOW
+                        </button>
+                    </a>    
+                </div>   
+            </section>
+        </header>
+        <section class="pagetwo" id="pagetwo">
+            <div class="come">
+                About:
+            </div>
+            <pre class="about">
+Starring: Rakshit Shetty, Rukmini Vasanth, Chaithra J Achar, Avinash, Sharath Lohitashwa, Achyutha Kumar, Pavitra Lokesh, Ramesh Indira, Gopal Krishna Deshpande and others.
+Produced By : Rakshit Shetty
+Written and Directed By : Hemanth M Rao
+DOP : Advaitha Gurumurthy
+Editor : Sunil Bharadwaj, Hemanth M Rao
+Music and Background Score By : Charan Raj
+Production Designer : Ullas Hydur
+Writers : Hemanth M Rao and Gundu Shetty
+Photographers : Sharath Padaru and Aishwarya Ashok
+Costume Designer : Vismaya Studios
+Make Up : N K Umamaheshwara and C R Vinay
+Audiography : M R Rajakrishnan
+Sound Effects : Vishnu PC
+Title Design : Avinash
+Subtitles : Madhu Daithota 
+Production Manager : Rajesh Konanur, B Shashidhara 
+DI : Magic B
+Colorist : M Raju Reddy 
+Action Choreography : Chetan D'Souza, Vikram Mor
+Executive Producers : Aniruddha G Kulkarni and Pranav R Bharadwaj
+Co director : Gundu Shetty
+Associate director : Aniket Terdal
+Assistant director : Sudheendra U S, Yashwanth V, Bhuvan Sathya & Kannadiga Agni
+Lyrics : Dhananjay Ranjan, Nagarjun Sharma and B R Suvarna Sharma
+Dubbing engineer: Suresh Guna, Renu studio
+Posters : Kaani Studio
+VFX Supervisor : Rahul V Gopalakrishnan
+VFX : Pinaka Studios
+Marketing : Shraman Jain, Sindhura TP
+Visual Promotions : Manoj VHR
+Digitally Powered By : Creative Guyz  </pre>
+            <div class="come">
+                Coming soon...
+            </div>
+        </section>
+        <footer>
+            Page created by Sudhanva K S
+        </footer>
+    </body>
+</html>
